@@ -1,0 +1,35 @@
+Class Book
+- Properties:
+  - pages: an array of Page objects
+  - index: an object to store the index of words
+
+- Methods:
+  - addPage(page): add a new page to the book
+  - removePage(pageNumber): remove a page from the book by page number
+  - createIndex(excludeWords): create the index of words from the book, excluding words from excludeWords file
+  - writeIndexToFile(filename): write the index to a file
+
+Class Page
+- Properties:
+  - number: the page number
+  - text: the text content of the page
+
+- Methods:
+  - getWords(): get an array of words from the page text
+
+Class Index
+- Properties:
+  - words: an array of Word objects
+
+- Methods:
+  - addWord(word): add a new word to the index
+  - getWord(wordText): get a word object from the index by text
+  - sortWords(): sort the words in the index alphabetically
+
+Class Word
+- Properties:
+  - text: the text content of the word
+  - pages: an array of page numbers on which the word is present
+
+- Methods:
+  - addPage(pageNumber): add a page number to the pages array
